@@ -20,7 +20,7 @@ const app = express()
 
 //routes
 app.get("/", (req, res) => {
-    res.send("They were, all of them, deceived")
+    res.send("They were, all of them, deceived. For another ring was made")
 })
 
 
