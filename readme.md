@@ -1,8 +1,8 @@
 # Seal Project 2
 
 - **Taz Campbell**
-- **App Name:**
-- **Description:**
+- **App Name: My Shopping List**
+- **Description: Users will be able to create a shopping list which will have the store location, the item name, the brand name, the cost, the quantity, and whether or not the item was purchased. they will be able to add, edit, and delete any of the items from that list. additional goal outside of mvp would be to add a user sign in/up option so that the list could be saved**
 - **GitHub URL:**
 - **Deployed Website:**
 - **Trello Board**
