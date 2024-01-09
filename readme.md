@@ -11,11 +11,10 @@
 
 ##### Node Dependencies (package.json)
 
-- express, morgan, mongoose, dotenv, ejs, bcrypt. connect-mongo,, express-session, method-override
+- express, morgan, mongoose, dotenv, ejs, bcrypt. connect-mongo, express-session, method-override
 
 ##### Frontend (if used, ex. jquery, alpine, bootstrap, htmx, etc.)
 
-- jquery, html, css, js
 - jquery, html, css, js
 
 ## Route Map
