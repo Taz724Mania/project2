@@ -46,7 +46,7 @@
 
 ##### Mobile Design
 
-![Mobile Design Mockup](./url-to-picture.jpg)
+
 
 ##### Desktop Design
 
