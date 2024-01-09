@@ -46,11 +46,11 @@
 
 ##### Mobile Design
 
-
+(./LayoutsDesignInspo)
 
 ##### Desktop Design
 
-![Desktop Design Mockup](./url-to-picture.jpg)
+(./LayoutsDesignInspo)
 
 ## ERD (Entity Relationship Diagram)
 
