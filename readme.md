@@ -11,11 +11,11 @@
 
 ##### Node Dependencies (package.json)
 
-- express
+- express, morgan, mongoose, dotenv, ejs
 
 ##### Frontend (if used, ex. jquery, alpine, bootstrap, htmx, etc.)
 
-- alpine
+- jquery, html, css, js
 
 ## Route Map
 
