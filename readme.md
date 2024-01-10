@@ -34,6 +34,8 @@
 
 | List Show | /list/:id | GET | Displays the details of an individual item |
 
+OPTIONAL:
+
 | List Sign-Up | /signup | GET | Renders the sign-up form |
 
 | List Sign-Up | /signup | POST | Stores the user information and encrypts the password they created |
@@ -54,6 +56,4 @@
 
 ## ERD (Entity Relationship Diagram)
 
-This should be a diagram showing your models and any relationships between them.
-
-![Entity Relationship Diagram](./url-to-picture.jpg)
+(./LayoutsDesignInspo)
