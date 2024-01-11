@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <body class="mainPage">
+    
+
+    <main >
+      <div>
+        <article>
+          <a href="/list/<%= list %>"></a>
+
+            <% for (let i = 0; i < list.length; ++i) { %>
+
+              <a href="/list/<%= list[i]._id %>">
+
+                <%= list[i].item %>
+
+           <% } %>
+
+          </a>
+        </article>
+
+       
+      </div>
+    </main>
+  </body>
+</html>
