@@ -3,17 +3,8 @@ require("dotenv").config()
 const express = require("express")
 const morgan = require("morgan")
 const methodOverride = require("method-override")
-const mongoose = require("mongoose")
+const mongoose = require("./models/connection")
 
-
-
-//database connect
-const {DATABASE_URL, SECRET, PORT} = process.env
-
-mongoose.connection
-.on("open", () => console.log("Connected to Mongoose"))
-.on("close", () => console.log("Disconnected from Mongoose"))
-.on("error", (error) => console.log(error))
 
 //app object
 const app = express()
