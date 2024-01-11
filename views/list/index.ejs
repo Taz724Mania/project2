@@ -13,7 +13,10 @@
 
               <a href="/list/<%= list[i]._id %>">
 
-                <%= list[i].item %>
+                <h1 class="items"><%= list[i].item %></h1>
+                <h2 class="store"><%= list[i].location %></h2>
+                <h2 class="quantity"><%= list[i].quantity %></h2>
+                <h2 class="cost"><%= list[i].cost %></h2>
 
            <% } %>
 
