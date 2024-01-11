@@ -86,9 +86,29 @@ app.get("/", (req, res) => {
                 res.status(400).send("An error occurred. Please view logs for details.")
             }
         })
-    
+
+    //update
+        app.put("/list/:id", async (req, res) => {
+
+            try{
+
+                const id = req.params.id
+
+                req.body.purchased = req.body.purchased === "on" ? true : false
+
+                await List.findByIdAndUpdate(id, req.body)
+
+                res.redirect(`/list/${id}`)
+
+            } catch(error) {
+                console.log("---", error.message, "---")
+                res.status(400).send("An error occurred. Please view logs for details.")
+            }
+        })
+
     //create
         app.post("/list", async (req, res) => {
+
             try {
 
                 req.body.purchased = req.body.purchased === "on" ? true : false
@@ -103,12 +123,22 @@ app.get("/", (req, res) => {
             }
         })
 
-    
-
-    //update
-
     //edit
+        app.get("/list/:id/edit", async (req, res) => {
+            try {
 
+                const id = req.params.id
+                const list = await List.findById(id)
+
+                res.render("list/edit.ejs", { list })
+
+
+            } catch(error) {
+                console.log("---", error.message, "---")
+                res.status(400).send("An error occurred. Please view logs for details.")
+            }
+
+        })
     //show
         app.get("/list/:id", async (req, res) => {
            try {

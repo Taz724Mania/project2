@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <div class="editForm">
+
+        <form action="/list/<%= list._id %>?_method=PUT" method="POST">
+            <fieldset>
+                <legend> Edit <%= list.item %> </legend>
+                
+                <label>
+                    Brand:<input type="text" name="brand" placeholder="preferred brand of item">
+                </label>
+            
+                <label>
+                    Store Location:<input type="text" name="location" placeholder="preferred pickup location">
+                </label>
+
+                <label>
+                    Quantity:<input type="number" name="quantity" placeholder="how many do you need?">
+                </label>
+
+                <label>
+                    Cost:<input type="text" name="cost" placeholder="estimated cost">
+                </label>
+
+                <label>
+                    Purchased:<input type="checkbox" name="purchased">
+                </label>
+
+            </fieldset>
+    </div>
+    <div class="submitEditButton">
+        <input type="submit" value="Submit Changes">
+    </div>
+
+    <div class="dashboard">
+        <a href="/list"><button>Dashboard</button></a>
+    </div>
