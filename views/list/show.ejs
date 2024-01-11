@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <body>
+
+    <main>
+      <h1 class="name"> <%= list.item %> </h1>
+      <div class="contents">
+        <article>
+  
+        <h2>
+            <%= list.brand %>
+          </h2> 
+
+        <h2>
+            <%= list.location %>
+          </h2>
+
+        <h2>
+            <%= list.cost %>
+          </h2>
+
+        <h2>
+            <%= list.quantity %>
+          </h2>
+
+        <h2> 
+            <%= list.purchased ? "Purchased" : "Not Purchased" %>
+          </h2>
+
+          
+
+          <a href="/list/<%= list._id %>/edit"><button>Edit this Item</button></a>
+
+          <form action="/list/<%= list._id %>?_method=DELETE" method="POST">
+
+            <button>Delete this Item</button>
+
+          </form>
+
+          <a href="/list"><button>Dashboard</button></a>
+          
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

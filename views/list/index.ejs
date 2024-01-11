@@ -13,18 +13,21 @@
 
               <a href="/list/<%= list[i]._id %>">
 
-                <h1 class="items"><%= list[i].item %></h1>
+                <h1 class="items"><%= list[i].item %></h1> </a>
+                 
+
                 <h2 class="store"><%= list[i].location %></h2>
                 <h2 class="quantity"><%= list[i].quantity %></h2>
                 <h2 class="cost"><%= list[i].cost %></h2>
-
-           <% } %>
-
-          </a>
+            <% } %>
+          
         </article>
-
-       
       </div>
+
+      <div class="indexButton">
+        <a href="/list/new"><button>Add an Item</button></a>
+      </div>
+
     </main>
   </body>
 </html>
