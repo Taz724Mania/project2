@@ -70,6 +70,23 @@ app.get("/", (req, res) => {
 
         })    
 
+    //destroy
+        app.delete("/list/:id", async (req, res) => {
+
+            try{ 
+            
+            const id = req.params.id
+
+            await List.findByIdAndDelete(id)
+
+            res.redirect("/list")
+
+            } catch(error) {
+                console.log("---", error.message, "---")
+                res.status(400).send("An error occurred. Please view logs for details.")
+            }
+        })
+    
     //create
         app.post("/list", async (req, res) => {
             try {
@@ -80,15 +97,17 @@ app.get("/", (req, res) => {
 
                 res.redirect("/list")
 
-            }catch(error) {
+            } catch(error) {
                 console.log("---", error.message, "---")
                 res.status(400).send("An error occurred. Please view logs for details.")
             }
         })
 
+    
 
+    //update
 
-
+    //edit
 
     //show
         app.get("/list/:id", async (req, res) => {
