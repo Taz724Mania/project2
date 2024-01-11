@@ -9,7 +9,7 @@ const mongoose = require("./connection")
             item: String,
             brand: String,
             location: String,
-            cost: Number,
+            cost: String,
             quantity: Number,
             purchased: Boolean
         })
