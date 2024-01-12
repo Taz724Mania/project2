@@ -32,9 +32,9 @@
                 res.send("An error occurred. Please view logs for details.")
             }
         })
-        
+
     //index    
-        router.get("/list", async (req, res) => {
+        router.get("/", async (req, res) => {
             try {
                 const list = await List.find({})
 
@@ -46,6 +46,98 @@
                 console.log("---", error.message, "---")
                 res.status(400).send("An error occurred. Please view logs for details.")
             }
+        })
+
+     //new
+        router.get("/new", (req, res) => {
+
+            res.render("list/new.ejs")
+
+        })
+
+    //destroy
+        router.delete("/:id", async (req, res) => {
+
+            try{ 
+            
+            const id = req.params.id
+
+            await List.findByIdAndDelete(id)
+
+            res.redirect("/list")
+
+            } catch(error) {
+                console.log("---", error.message, "---")
+                res.status(400).send("An error occurred. Please view logs for details.")
+            }
+        })
+
+    //update
+        router.put("/:id", async (req, res) => {
+
+            try{
+
+                const id = req.params.id
+
+                req.body.purchased = req.body.purchased === "on" ? true : false
+
+                await List.findByIdAndUpdate(id, req.body)
+
+                res.redirect(`/lis/${id}`)
+
+            } catch(error) {
+                console.log("---", error.message, "---")
+                res.status(400).send("An error occurred. Please view logs for details.")
+            }
+        })
+
+    //create
+        router.post("/list", async (req, res) => {
+
+            try {
+
+                req.body.purchased = req.body.purchased === "on" ? true : false
+
+                await List.create(req.body)
+
+                res.redirect("/list")
+
+            } catch(error) {
+                console.log("---", error.message, "---")
+                res.status(400).send("An error occurred. Please view logs for details.")
+            }
+        })
+
+    //edit
+        router.get("/:id/edit", async (req, res) => {
+            try {
+
+                const id = req.params.id
+                const list = await List.findById(id)
+
+                res.render("list/edit.ejs", { list })
+
+
+            } catch(error) {
+                console.log("---", error.message, "---")
+                res.status(400).send("An error occurred. Please view logs for details.")
+            }
+
+        })
+
+    //show
+        router.get("/:id", async (req, res) => {
+        try {
+
+            const id = req.params.id
+            const list = await List.findById(id)
+            
+            res.render("list/show.ejs", { list } )
+
+        } catch(error) {
+            console.log("---", error.message, "---")
+            res.status(400).send("An error occurred. Please view logs for details.")
+        }
         })
 
 
