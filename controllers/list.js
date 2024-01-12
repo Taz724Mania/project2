@@ -83,7 +83,7 @@
 
                 await List.findByIdAndUpdate(id, req.body)
 
-                res.redirect(`/lis/${id}`)
+                res.redirect(`/list/${id}`)
 
             } catch(error) {
                 console.log("---", error.message, "---")
@@ -92,7 +92,7 @@
         })
 
     //create
-        router.post("/list", async (req, res) => {
+        router.post("/", async (req, res) => {
 
             try {
 
