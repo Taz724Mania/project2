@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+    <%- include("./cssjs.ejs") %>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 </head>
-<body>
+<body class="editPage">
     <div class="editForm">
 
         <form action="/list/<%= list._id %>?_method=PUT" method="POST">

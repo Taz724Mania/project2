@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  <%- include("./cssjs.ejs") %>
   <body class="mainPage">
     
 
     <main >
       <div>
-        <article>
-          <a href="/list/<%= list %>"></a>
+        <article class="indexList">
 
             <% for (let i = 0; i < list.length; ++i) { %>
 
-              <a href="/list/<%= list[i]._id %>">
+              <a class="indexHyperlink" href="/list/<%= list[i]._id %>">
 
                 <h1 class="items"><%= list[i].item %></h1> </a>
-                 
 
-                <h2 class="store"><%= list[i].location %></h2>
-                <h2 class="quantity"><%= list[i].quantity %></h2>
-                <h2 class="cost"><%= list[i].cost %></h2>
+                <h3 class="store"><%= list[i].location %></h3>
+
+                <h3 class="quantity"><%= list[i].quantity %></h3>
+
+                <h3 class="cost"><%= list[i].cost %></h3>
+       
             <% } %>
-          
+
         </article>
       </div>
 
       <div class="indexButton">
-        <a href="/list/new"><button>Add an Item</button></a>
+
+        <a  href="/list/new"><button class="Button1">Add an Item</button></a>
+        
       </div>
 
     </main>

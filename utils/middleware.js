@@ -5,7 +5,7 @@
     const methodOverride = require("method-override")
     const listController = require("../controllers/list")
 
-function registerGlobalMiddleware(app){
+function registerGlobalMiddleware(app) {
 //Register Middleware
     app.use(morgan("dev"))
     app.use(methodOverride("_method"))

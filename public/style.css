@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "Handlee";
+    src: url('./fonts/Handlee/Handlee-Regular.ttf');
+}
+
+.mainPage, .showPage, .newPage, .editPage {
+    background-image: url('./images/watercolour-background-with-leaves/17.jpg');
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.indexList {
+    font-family: "Handlee", 'cursive';
+    display: grid;
+    margin-top: 7%;
+    text-align: center;
+}
+
+.indexHyperlink {
+    color: darkblue;
+    text-shadow: 2px, 2px, 5px darkblue;
+}
+
+.indexButton {
+   position: absolute;
+   bottom: 95.5%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   
+}
+
+.Button1 {
+    font-family: "Handlee";
+    text-shadow: 3px, 3px, 5px black;
+    font-weight: bold;
+    background-color: #FDDA0D;
+}
+
+
+
+
+
+
+
+
