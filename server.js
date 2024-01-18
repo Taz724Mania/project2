@@ -11,7 +11,8 @@
 
 //Routes
     app.get("/", (req, res) => {
-        res.send("They were, all of them, deceived. For another ring was made")
+        res.redirect ("/list")
+        
     })
 
 //Server Listener
