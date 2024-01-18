@@ -3,15 +3,19 @@
   <%- include("./cssjs.ejs") %>
   <body class="mainPage">
     
+<header>
+  <h1>My Shopping list</h1>
+</header>
 
-    <main >
-      <div>
-        <article class="indexList">
+    <main>
 
+      <div class="indexList">
             <% for (let i = 0; i < list.length; ++i) { %>
 
               <a class="indexHyperlink" href="/list/<%= list[i]._id %>">
+                
 
+              <div class="indexBorder">
                 <h1 class="items"><%= list[i].item %></h1> </a>
 
                 <h3 class="store"><%= list[i].location %></h3>
@@ -19,16 +23,13 @@
                 <h3 class="quantity"><%= list[i].quantity %></h3>
 
                 <h3 class="cost"><%= list[i].cost %></h3>
-       
+              </div>
+
             <% } %>
-
-        </article>
       </div>
-
+       
       <div class="indexButton">
-
-        <a  href="/list/new"><button class="Button1">Add an Item</button></a>
-        
+        <a  href="/list/new"><button class="Button">Add an Item</button></a>
       </div>
 
     </main>

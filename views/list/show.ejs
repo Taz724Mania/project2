@@ -30,16 +30,16 @@
 
           
 
-          <a href="/list/<%= list._id %>/edit"><button>Edit this Item</button></a>
+          <a href="/list/<%= list._id %>/edit"><button class="Button">Edit this Item</button></a>
 
           <form action="/list/<%= list._id %>?_method=DELETE" method="POST">
 
-            <button>Delete this Item</button>
+            <button class="Button">Delete this Item</button>
 
           </form>
 
-          <div class="dashboard">
-            <a href="/list"><button>Dashboard</button></a>
+          <div>
+            <a href="/list"><button class="Button">Dashboard</button></a>
         </div>
           
         </article>

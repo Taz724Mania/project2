@@ -11,37 +11,66 @@
     height: 100%;
 }
 
-.indexList {
-    font-family: "Handlee", 'cursive';
-    display: grid;
-    margin-top: 7%;
-    text-align: center;
-}
-
-.indexHyperlink {
-    color: darkblue;
-    text-shadow: 2px, 2px, 5px darkblue;
-}
-
-.indexButton {
-   position: absolute;
-   bottom: 95.5%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   
-}
-
-.Button1 {
+.Button, .nSubmitButton, .dashButton {
     font-family: "Handlee";
     text-shadow: 3px, 3px, 5px black;
     font-weight: bold;
     background-color: #FDDA0D;
 }
 
+/* Index */
+
+.indexList, .showPage, .editPage, .newPage {
+    font-family: "Handlee", 'cursive';
+    display: grid;
+    text-align: center;
+}
+
+header {
+    font-family: "Handlee";
+    color: #0047AB;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #FDDA0D;
+    margin-top: 100px;
+}
+
+.indexHyperlink {
+    color: #0047AB;
+
+}
+
+.indexBorder {
+    border: 15px solid #FDDA0D;
+    border-radius: 75%;
+    padding: -75px;
+    margin: 5px;
+}
+
+.indexButton {
+   position: absolute;
+   bottom: 93%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   
+}
 
 
+/* Show */
 
+.showPage {
+    color: #0047AB;
+}
 
+/* New */
 
+.nButtons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.newForm {
+    margin-top: 5%;
+}
 
 

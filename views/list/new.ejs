@@ -7,10 +7,14 @@
     
 </head>
 <body class="newPage">
+    <header>
+        <h1>Add a New Item to Your List</h1>
+    </header>
     <div class="newForm">
+
         <form action="/list" method="POST">
             <fieldset>
-                <legend> Add an Item</legend>
+
                 <label>
                     Item:<input type="text" name="item" placeholder="name of item">
                 </label>
@@ -37,11 +41,11 @@
 
             </fieldset>
     </div>
-    <div class="submitNewButton">
-        <input type="submit" value="Add New Item">
+    <div class="nButtons">
+        <input class="nSubmitButton" type="submit" value="Add New Item">
     </div>
-    <div class="dashboard">
-        <a href="/list"><button>Dashboard</button></a>
+    <div class="nButtons">
+        <a href="/list"><button class="dashButton">Dashboard</button></a>
     </div>
 
 </body>
