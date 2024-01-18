@@ -64,6 +64,12 @@ header {
     text-decoration-color: #FDDA0D;
 }
 
+.contents {
+    border: 5px solid #FDDA0D;
+    border-radius: 75%;
+    padding: -75px;
+    margin: 5px;
+}
 
 /* New and Edit*/
 
