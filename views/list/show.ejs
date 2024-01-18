@@ -4,9 +4,10 @@
   <body class="showPage">
 
     <main>
+      
       <h1 class="name"> <%= list.item %> </h1>
+
       <div class="contents">
-        <article>
   
         <h2>
             <%= list.brand %>
@@ -27,23 +28,22 @@
         <h2> 
             <%= list.purchased ? "Purchased" : "Not Purchased" %>
           </h2>
-
+      </div>
           
-
-          <a href="/list/<%= list._id %>/edit"><button class="Button">Edit this Item</button></a>
+          <a href="/list/<%= list._id %>/edit"><button class="sButtons">Edit this Item</button></a>
 
           <form action="/list/<%= list._id %>?_method=DELETE" method="POST">
 
-            <button class="Button">Delete this Item</button>
+            <button class="sButtons">Delete this Item</button>
 
           </form>
 
-          <div>
-            <a href="/list"><button class="Button">Dashboard</button></a>
-        </div>
+         
+            <a  href="/list"><button class="sButtons">Dashboard</button></a>
+          
           
         </article>
-      </div>
+      
     </main>
   </body>
 </html>

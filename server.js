@@ -15,7 +15,7 @@
     })
 
 //Server Listener
-    const PORT = process.env.PORT || 3000
+    const PORT = process.env.PORT || 3335
     app.listen(PORT, () => {
         console.log(`The one ring to rule them all in ${PORT}`)
     })

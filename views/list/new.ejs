@@ -7,32 +7,34 @@
     
 </head>
 <body class="newPage">
-    <header>
+    
+    <header class="Header">
         <h1>Add a New Item to Your List</h1>
     </header>
+
     <div class="newForm">
 
         <form action="/list" method="POST">
             <fieldset>
 
                 <label>
-                    Item:<input type="text" name="item" placeholder="name of item">
+                    Item:<input class="Input" type="text" name="item" placeholder="name of item">
                 </label>
 
                 <label>
-                    Brand:<input type="text" name="brand" placeholder="preferred brand of item">
+                    Brand:<input class="Input" type="text" name="brand" placeholder="preferred brand of item">
                 </label>
 
                 <label>
-                    Store Location:<input type="text" name="location" placeholder="preferred pickup location">
+                    Store Location:<input class="Input" type="text" name="location" placeholder="preferred pickup location">
                 </label>
 
                 <label>
-                    Quantity:<input type="number" name="quantity" placeholder="how many do you need?">
+                    Quantity:<input class="Input" type="number" name="quantity" placeholder="how many do you need?">
                 </label>
 
                 <label>
-                    Cost:<input type="text" name="cost" placeholder="estimated cost">
+                    Cost:<input class="Input" type="text" name="cost" placeholder="estimated cost">
                 </label>
 
                 <label>
@@ -41,11 +43,11 @@
 
             </fieldset>
     </div>
-    <div class="nButtons">
-        <input class="nSubmitButton" type="submit" value="Add New Item">
+    <div>
+        <input class="nButtons" type="submit" value="Add New Item">
     </div>
-    <div class="nButtons">
-        <a href="/list"><button class="dashButton">Dashboard</button></a>
+    <div>
+        <a href="/list"><button class="nButtons">Dashboard</button></a>
     </div>
 
 </body>

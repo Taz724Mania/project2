@@ -13,7 +13,6 @@
 
 .Button, .nSubmitButton, .dashButton {
     font-family: "Handlee";
-    text-shadow: 3px, 3px, 5px black;
     font-weight: bold;
     background-color: #FDDA0D;
 }
@@ -58,19 +57,42 @@ header {
 
 /* Show */
 
-.showPage {
+.name {
     color: #0047AB;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #FDDA0D;
 }
 
-/* New */
 
-.nButtons {
-    display: flex;
-    justify-content: space-around;
+/* New and Edit*/
+
+.nButtons, .sButtons {
+    font-family: "Handlee";
+    font-weight: bold;
+    background-color: #FDDA0D;
+    margin-top: 15px;
 }
 
 .newForm {
+    margin-top: 30px;
+}
+
+.Header {
     margin-top: 5%;
 }
+
+.Input {
+    background-color: #FDDA0D;
+}
+
+
+
+
+
+
+
+
+
 
 

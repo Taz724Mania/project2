@@ -7,26 +7,29 @@
     
 </head>
 <body class="editPage">
+
+    <header class="Header"> 
+        <h1>Edit <%= list.item %></h1> </header>
+
     <div class="editForm">
 
         <form action="/list/<%= list._id %>?_method=PUT" method="POST">
+
             <fieldset>
-                <legend> Edit <%= list.item %> </legend>
-                
                 <label>
-                    Brand:<input type="text" name="brand" placeholder="preferred brand of item">
+                    Brand:<input class="Input" type="text" name="brand" placeholder="preferred brand of item">
                 </label>
             
                 <label>
-                    Store Location:<input type="text" name="location" placeholder="preferred pickup location">
+                    Store Location:<input class="Input" type="text" name="location" placeholder="preferred pickup location">
                 </label>
 
                 <label>
-                    Quantity:<input type="number" name="quantity" placeholder="how many do you need?">
+                    Quantity:<input class="Input" type="number" name="quantity" placeholder="how many do you need?">
                 </label>
 
                 <label>
-                    Cost:<input type="text" name="cost" placeholder="estimated cost">
+                    Cost:<input class="Input" type="text" name="cost" placeholder="estimated cost">
                 </label>
 
                 <label>
