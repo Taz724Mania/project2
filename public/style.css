@@ -54,7 +54,6 @@ header {
    
 }
 
-
 /* Show */
 
 .name {
@@ -73,7 +72,7 @@ header {
 
 /* New and Edit*/
 
-.nButtons, .sButtons, .eButtons {
+.nButtons, .sButtons, .sDeleteButton, .eButtons {
     font-family: "Handlee";
     font-weight: bold;
     background-color: #FDDA0D;
@@ -92,7 +91,21 @@ header {
     background-color: #FDDA0D;
 }
 
+/* Media */
 
+@media (max-width: 780px) {
+  .indexButton {
+    bottom: 96%;
+  }
+
+  .eFieldset, .nFieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
 
 
 
