@@ -73,7 +73,7 @@ header {
 
 /* New and Edit*/
 
-.nButtons, .sButtons {
+.nButtons, .sButtons, .eButtons {
     font-family: "Handlee";
     font-weight: bold;
     background-color: #FDDA0D;
